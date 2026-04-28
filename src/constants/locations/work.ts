@@ -5,46 +5,43 @@ export const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-    // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Trans Zigot Web",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      position: "top-10 left-5",
+      windowPosition: "top-[5vh] left-5",
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Zigot-Web.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "Trans Zigot is a team of specialists committed to providing reliable car rental services at competitive and transparent prices.",
+            "backed by comprehensive insurance, 24/7 customer support, as well as a fleet of well-maintained vehicles to ensure a comfortable, safe and satisfying rental experience.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "zigot-web.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://mr-zigot-web.vercel.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "trans-zigot.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/work/trans-zigot-hero.png",
         },
         {
           id: 5,
@@ -52,16 +49,15 @@ export const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://www.figma.com/design/H2rCrHG9sKMJ0eyweScT6V/Mr.-Zigot-Trans?node-id=1-185&t=MAHGYgCLW68fvTe9-1",
           position: "top-60 right-20",
         },
       ],
     },
 
-    // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Roomify",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -69,7 +65,7 @@ export const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Roomify-Web.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
@@ -83,7 +79,7 @@ export const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "roomify.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
@@ -92,7 +88,7 @@ export const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "roomify.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -111,7 +107,6 @@ export const WORK_LOCATION = {
       ],
     },
 
-    // ▶ Project 3
     {
       id: 7,
       name: "Food Delivery App",

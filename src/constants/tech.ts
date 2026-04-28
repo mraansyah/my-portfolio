@@ -1,7 +1,7 @@
 export const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    items: ["React.js", "Next.js", "TypeScript", "JavaScript"],
   },
   {
     category: "Mobile",
@@ -9,11 +9,11 @@ export const techStack = [
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Tailwind CSS", "styled-components", "CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express", "Go", "Laravel"],
   },
   {
     category: "Database",
