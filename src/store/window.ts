@@ -8,7 +8,7 @@ interface WindowInfo {
   data: unknown;
 }
 
-type WindowKey = keyof typeof WINDOW_CONFIG;
+export type WindowKey = keyof typeof WINDOW_CONFIG;
 
 interface WindowState {
   windows: Record<WindowKey, WindowInfo>;

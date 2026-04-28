@@ -14,7 +14,7 @@ export const navLinks = [
     name: "Resume",
     type: "resume",
   },
-];
+] as const;
 
 export const navIcons = [
   {
