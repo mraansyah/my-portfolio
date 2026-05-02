@@ -6,19 +6,15 @@ export const PLACES_GALLERY = {
   children: [
     {
       id: 1,
-      img: "/images/gal1.png",
+      img: "/images/gallery/places/jagorawi.jpeg",
     },
     {
       id: 2,
-      img: "/images/gal2.png",
+      img: "/images/gallery/places/mall-bandung.jpeg",
     },
     {
       id: 3,
-      img: "/images/gal3.png",
-    },
-    {
-      id: 4,
-      img: "/images/gal4.png",
+      img: "/images/gallery/places/rooftop-aeon.jpeg",
     },
   ],
 };

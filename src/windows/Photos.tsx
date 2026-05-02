@@ -42,7 +42,7 @@ const Photos = () => {
           </ul>
         </div>
 
-        <div className="gallery flex-1 overflow-y-auto">
+        <div className="gallery flex-1 overflow-auto">
           <ul>
             {currentPhotos.map(({ id, img }, idx) => (
               <li
