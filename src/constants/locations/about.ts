@@ -42,7 +42,10 @@ export const ABOUT_LOCATION = {
       subtitle: "Meet the Developer Behind the Code",
       image: "",
       description: [
-        "Hey im rafi"
+        "Hey! I'm Rafi, a software engineer who enjoys building powerful, efficient applications that actually solve real-world problems.",
+        "I specialize in React, Next.js, and Node.js are my bread and butter, I love making things feel fast, scalable, and just a little bit smarter.",
+        "I'm big on clean architecture, robust code, and building systems that don't require a search party to debug when things get complex.",
+        "Outside of dev work, you'll probably find me tweaking my setup at 2AM, hunting for the perfect cup of coffee, or impulse-buying gadgets I've already convinced myself are 'essential' for my workflow.",
       ],
     },
   ],

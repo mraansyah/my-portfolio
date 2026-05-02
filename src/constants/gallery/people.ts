@@ -6,19 +6,19 @@ export const PEOPLE_GALLERY = {
   children: [
     {
       id: 1,
-      img: "/images/gallery/rafi-bluebird.jpeg",
+      img: "/images/gallery/people/frontend.jpeg",
     },
     {
       id: 2,
-      img: "/images/gal2.png",
+      img: "/images/gallery/people/offboarding.jpeg",
     },
     {
       id: 3,
-      img: "/images/gal3.png",
+      img: "/images/gallery/people/bbone.jpeg",
     },
     {
       id: 4,
-      img: "/images/gal4.png",
+      img: "/images/gallery/people/bukber.jpeg",
     },
   ],
 };
