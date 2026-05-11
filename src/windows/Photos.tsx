@@ -42,11 +42,12 @@ const Photos = () => {
           </ul>
         </div>
 
-        <div className="gallery flex-1 overflow-auto">
-          <ul>
+        <div className="gallery flex-1 overflow-auto p-4">
+          <div className="photos-grid">
             {currentPhotos.map(({ id, img }, idx) => (
-              <li
+              <div
                 key={idx}
+                className="photo-item cursor-pointer"
                 onClick={() => openWindow("imgfile", {
                   id,
                   name: "Gallery image",
@@ -54,13 +55,12 @@ const Photos = () => {
                   kind: "file",
                   fileType: "img",
                   imageUrl: img,
-                })
-                }
+                })}
               >
-                <img src={img} alt={`Gallery image ${id}`} />
-              </li>
+                <img src={img} alt="" className="w-full h-full object-cover rounded-lg" />
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </>
