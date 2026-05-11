@@ -56,12 +56,22 @@
 </table>
 
 <br />
-
 <h2>📸 Preview</h2>
-<p>
-  <img width="1894" height="854" alt="image" src="https://github.com/user-attachments/assets/f2aee84a-845b-4f2b-a09e-d8140b8bd291" />
-  <img width="405" height="835" alt="image" src="https://github.com/user-attachments/assets/b25b93a3-6cda-4d0b-87b8-3dcbb5004290" />
-</p>
+<img width="1900" height="861" alt="Screenshot 2026-05-12 053055" src="https://github.com/user-attachments/assets/4b5b6224-afa5-4eb7-be8c-783fd55a9a14" />
+<br/>
+<img width="1896" height="861" alt="Screenshot 2026-05-12 053149" src="https://github.com/user-attachments/assets/d61d59e0-2e98-43cf-848f-5dc2225f6206" />
+<br/>
+
+<table>
+  <tr>
+    <td>
+      <img width="438" height="863" alt="Screenshot 2026-05-12 053023" src="https://github.com/user-attachments/assets/0f9c044f-7c6d-474e-a018-ce487d6024df" />
+    </td>
+    <td>
+      <img width="419" height="855" alt="Screenshot 2026-05-12 053036" src="https://github.com/user-attachments/assets/ff339830-7f5b-47c3-9c87-362b3bf04957" />
+    </td>
+  </tr>
+</table>
 
 <br />
 
