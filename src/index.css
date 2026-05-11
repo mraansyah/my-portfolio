@@ -272,33 +272,21 @@ body {
     }
 
     .gallery {
-      @apply p-5;
+      @apply flex-1 overflow-auto bg-white;
+    }
 
-      ul {
-        @apply grid grid-cols-5 grid-rows-5 gap-2.5 min-w-[500px];
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      align-content: start;
+      @apply p-4;
+    }
 
-        li {
-          img {
-            @apply size-full object-cover rounded-lg;
-          }
-
-          &:first-child {
-            @apply row-start-1 row-span-3 col-start-1 col-span-3;
-          }
-
-          &:nth-child(2) {
-            @apply row-start-1 row-span-3 col-start-4 col-span-2;
-          }
-
-          &:nth-child(3) {
-            @apply row-start-4 row-span-2 col-start-3 col-span-3;
-          }
-
-          &:last-child {
-            @apply row-start-4 row-span-2 col-start-1 col-span-2;
-          }
-        }
-      }
+    .photo-item {
+      @apply w-full overflow-hidden rounded-xl shadow-md border border-gray-100 transition-all hover:scale-[1.01] hover:shadow-lg;
+      cursor: pointer;
+      aspect-ratio: 4/3
     }
   }
 
@@ -338,19 +326,23 @@ body {
         }
       }
     }
-
+    
     .content {
-      @apply flex-1 p-8 bg-white max-w-2xl relative;
-
+      @apply flex-1 p-8 bg-white overflow-y-auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      gap: 24px;
+      align-content: start;
+    
       li {
-        @apply absolute flex items-center flex-col gap-3;
-
+        @apply flex items-center flex-col gap-3 cursor-pointer p-2 rounded-lg hover:bg-gray-100;
+    
         img {
-          @apply object-contain object-center size-16 relative group-hover:scale-105;
+          @apply object-contain object-center size-16 group-hover:scale-105;
         }
-
+    
         p {
-          @apply text-sm text-center font-medium w-40;
+          @apply text-sm text-center font-medium w-full truncate;
         }
       }
     }
@@ -398,5 +390,306 @@ body {
         }
       }
     }
+  }
+}
+
+
+@layer components {
+  .mobile-app {
+    @apply w-dvw h-dvh overflow-hidden bg-cover bg-center bg-no-repeat;
+    background-image: url("/images/wallpaper.png");
+  }
+
+  .mobile-screen {
+    @apply flex flex-col h-dvh bg-gray-50/95 backdrop-blur-xl;
+  }
+
+  .mobile-header {
+    @apply flex items-center justify-between px-4 py-3 bg-gray-50/80 backdrop-blur-md border-b border-gray-200/60;
+    min-height: 44px;
+  }
+
+  .mobile-header-left,
+  .mobile-header-right {
+    @apply flex items-center min-w-[80px];
+  }
+
+  .mobile-header-right {
+    @apply justify-end;
+  }
+
+  .mobile-header-title {
+    @apply text-base font-semibold text-gray-900 text-center flex-1;
+  }
+
+  .mobile-back-btn {
+    @apply flex items-center gap-0.5 text-blue-500 text-sm font-medium;
+  }
+
+  .mobile-header-action {
+    @apply text-blue-500 p-1;
+  }
+
+  .mobile-home {
+    @apply flex flex-col h-dvh relative;
+  }
+
+  .mobile-status-bar {
+    @apply flex items-center justify-between px-6 pt-3 pb-2;
+  }
+
+  .mobile-time {
+    @apply text-sm font-semibold text-white;
+  }
+
+  .mobile-status-icons {
+    @apply flex items-center gap-1;
+  }
+
+  .mobile-status-icon {
+    @apply w-4 h-4 brightness-0 invert;
+  }
+
+  .mobile-app-grid {
+    @apply flex-1 px-6 pt-10;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+    gap: 24px 12px;
+    align-content: start;
+  }
+
+  .mobile-app-icon {
+    @apply flex flex-col items-center gap-1.5;
+  }
+
+  .mobile-app-icon-img {
+    @apply w-14 h-14 object-contain;
+  }
+
+  .mobile-app-icon span {
+    @apply text-xs text-white font-medium drop-shadow-lg;
+  }
+
+  .mobile-search-pill {
+    @apply mx-auto mb-4 flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-5 py-2;
+  }
+
+  .mobile-search-icon {
+    @apply w-4 h-4 brightness-0 invert opacity-70;
+  }
+
+  .mobile-search-pill span {
+    @apply text-sm text-white/80;
+  }
+
+  .mobile-dock {
+    @apply flex items-center justify-center gap-4 mx-auto mb-6 px-4 py-2 bg-white/20 backdrop-blur-md rounded-2xl;
+  }
+
+  .mobile-dock-icon {
+    @apply w-12 h-12 rounded-xl overflow-hidden;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .mobile-search-bar {
+    @apply flex items-center gap-2 mx-4 my-3 bg-gray-200/70 rounded-xl px-3 py-2.5;
+  }
+
+  .mobile-search-bar-icon {
+    @apply text-gray-400;
+  }
+
+  .mobile-search-bar input {
+    @apply flex-1 bg-transparent text-sm text-gray-600 placeholder-gray-400 outline-none;
+  }
+
+  .mobile-file-grid {
+    @apply flex-1 overflow-y-auto px-4 py-4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 16px;
+    align-content: start;
+  }
+
+  .mobile-file-item {
+    @apply flex flex-col items-center gap-2;
+  }
+
+  .mobile-file-icon {
+    @apply w-14 h-14 object-contain;
+  }
+
+  .mobile-folder-icon {
+    @apply w-20 h-16;
+  }
+
+  .mobile-file-name {
+    @apply text-xs text-gray-700 text-center leading-tight;
+    max-width: 90px;
+    word-break: break-word;
+  }
+
+  .mobile-tab-bar {
+    @apply flex items-center justify-around bg-gray-50/90 backdrop-blur-md border-t border-gray-200/60 py-2 pb-6;
+  }
+
+  .mobile-tab {
+    @apply flex flex-col items-center gap-1 text-gray-400 text-[10px] font-medium;
+  }
+
+  .mobile-tab-active {
+    @apply text-blue-500;
+  }
+
+  .mobile-tab-icon {
+    @apply w-5 h-5 object-contain;
+  }
+
+  .mobile-tab-active .mobile-tab-icon {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(90%) saturate(2000%) hue-rotate(200deg) brightness(100%);
+  }
+
+  .mobile-contact-content {
+    @apply flex-1 overflow-y-auto px-6 py-8;
+  }
+
+  .mobile-contact-profile {
+    @apply flex flex-col items-center text-center mb-8;
+  }
+
+  .mobile-contact-avatar {
+    @apply w-24 h-24 rounded-full object-cover mb-4 shadow-lg;
+  }
+
+  .mobile-contact-title {
+    @apply text-xl font-bold text-gray-900 mb-2;
+  }
+
+  .mobile-contact-subtitle {
+    @apply text-sm text-gray-500 leading-relaxed;
+  }
+
+  .mobile-contact-cards {
+    @apply flex flex-col gap-3;
+  }
+
+  .mobile-contact-card {
+    @apply flex flex-col gap-4 rounded-xl p-4 transition-transform active:scale-[0.98];
+  }
+
+  .mobile-contact-card-icon {
+    @apply w-6 h-6;
+  }
+
+  .mobile-contact-card-text {
+    @apply text-sm font-semibold text-white;
+  }
+
+  .mobile-safari-content {
+    @apply flex-1 overflow-y-auto px-5 py-6;
+  }
+
+  .mobile-safari-blog-title {
+    @apply text-lg font-bold text-pink-600 mb-6;
+  }
+
+  .mobile-safari-posts {
+    @apply space-y-6;
+  }
+
+  .mobile-safari-post {
+    @apply flex gap-3 items-start;
+  }
+
+  .mobile-safari-post-img {
+    @apply w-16 h-16 rounded-lg object-cover flex-none;
+  }
+
+  .mobile-safari-post-info {
+    @apply flex-1 space-y-1;
+  }
+
+  .mobile-safari-post-date {
+    @apply text-xs text-gray-400;
+  }
+
+  .mobile-safari-post-title {
+    @apply text-sm font-semibold text-gray-800 leading-snug;
+  }
+
+  .mobile-safari-post-link {
+    @apply text-xs text-blue-500 flex items-center gap-1;
+  }
+
+  .mobile-photos-grid {
+    @apply flex-1 overflow-y-auto px-2 py-3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    align-content: start;
+  }
+
+  .mobile-photo-item {
+    @apply overflow-hidden rounded-lg aspect-[4/3];
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .mobile-resume-content {
+    @apply flex-1 overflow-auto flex justify-center items-start p-4 bg-gray-100;
+  }
+
+  .mobile-terminal-content {
+    @apply flex-1 overflow-y-auto p-5 font-roboto text-sm;
+  }
+
+  .mobile-terminal-prompt {
+    @apply mb-4;
+  }
+
+  .mobile-terminal-table {
+    @apply border-y border-dashed border-gray-300 py-3 my-4 space-y-2;
+  }
+
+  .mobile-terminal-header-row {
+    @apply flex items-center gap-4 text-gray-500 text-xs ms-8 mb-2;
+
+    span:first-child {
+      @apply w-20;
+    }
+  }
+
+  .mobile-terminal-row {
+    @apply flex items-center gap-1;
+  }
+
+  .mobile-terminal-check {
+    @apply w-6 flex-none;
+  }
+
+  .mobile-terminal-category {
+    @apply font-semibold text-[#00A154] w-20 flex-none;
+  }
+
+  .mobile-terminal-items {
+    @apply text-gray-700 flex-1 text-xs;
+  }
+
+  .mobile-terminal-footer {
+    @apply text-[#00A154] space-y-1;
+
+    p {
+      @apply flex items-center gap-2 text-xs;
+    }
+  }
+
+  .home-screen {
+    @apply fixed inset-0 pt-16 pb-24 px-6;
+    z-index: 0;
   }
 }

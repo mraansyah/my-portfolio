@@ -7,7 +7,7 @@ export const WORK_LOCATION = {
   children: [
     {
       id: 5,
-      name: "Trans Zigot Web",
+      name: "Trans Zigot",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
