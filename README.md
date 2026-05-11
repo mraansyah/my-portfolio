@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+<h1 align="center">📱💻 Interactive macOS + iOS Portfolio</h1>
+<p align="center">
+  <strong>An immersive and interactive portfolio environment blending macOS elegance with iOS intuitiveness.</strong>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-React.js-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Animations-GSAP-88CE02?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/State%20Management-Zustand-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Styling-TailwindCSS-38BDF8?style=for-the-badge" />
+</p>
 
-Currently, two official plugins are available:
+<br />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<h2>✨ Key Features</h2>
+<ul>
+  <li><strong>Dual-Interface Experience:</strong> macOS-style desktop with multi-window support + an iOS-inspired adaptive mobile grid.</li>
+  <li><strong>Interactive File System:</strong> Finder-like navigation with expandable folders and intuitive project browsing.</li>
+  <li><strong>Seamless Animations:</strong> Powered by GSAP for fluid transitions and premium UI interactions.</li>
+  <li><strong>Responsive Multi-App Ecosystem:</strong>
+    <ul>
+      <li><strong>Resume Viewer:</strong> Built-in PDF viewer for instant CV preview.</li>
+      <li><strong>Photos Gallery:</strong> Dynamic, automated grid layout.</li>
+      <li><strong>Safari/Text Viewer:</strong> Optimized reading experience for blogs and articles.</li>
+      <li><strong>Terminal & Contact:</strong> Show technical skills and connect directly to social platforms.</li>
+    </ul>
+  </li>
+  <li><strong>Advanced Navigation State:</strong> Zustand maintains folder & screen history for smooth back-navigation.</li>
+</ul>
 
-## React Compiler
+<br />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<h2>🛠️ Built With</h2>
+<table>
+  <tr>
+    <td><strong>Framework</strong></td>
+    <td>React.js</td>
+  </tr>
+  <tr>
+    <td><strong>Language</strong></td>
+    <td>TypeScript</td>
+  </tr>
+  <tr>
+    <td><strong>Animations</strong></td>
+    <td>GSAP</td>
+  </tr>
+  <tr>
+    <td><strong>State Management</strong></td>
+    <td>Zustand</td>
+  </tr>
+  <tr>
+    <td><strong>Styling</strong></td>
+    <td>TailwindCSS</td>
+  </tr>
+</table>
 
-## Expanding the ESLint configuration
+<br />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<h2>📸 Preview</h2>
+<p>
+  <img width="1894" height="854" alt="image" src="https://github.com/user-attachments/assets/f2aee84a-845b-4f2b-a09e-d8140b8bd291" />
+  <img width="405" height="835" alt="image" src="https://github.com/user-attachments/assets/b25b93a3-6cda-4d0b-87b8-3dcbb5004290" />
+</p>
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<br />
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<h2>🚀 Getting Started</h2>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+# Clone repository
+git clone https://github.com/mraansyah/my-portfolio.git
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Install dependencies
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Start development server
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Open in browser
+localhost:5173
