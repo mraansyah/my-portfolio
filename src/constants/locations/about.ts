@@ -12,7 +12,7 @@ export const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "",
+      imageUrl: "/images/gallery/me/me.jpeg",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "",
+      imageUrl: "images/contact/casual-me.jpeg",
     },
     {
       id: 3,

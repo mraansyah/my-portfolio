@@ -7,7 +7,7 @@ body {
   width: 100dvw;
   overflow: hidden;
   height: 100dvh;
-  background-image: url("/images/wallpaper.png");
+  background-image: url("/images/desktop-wallpaper.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -397,7 +397,7 @@ body {
 @layer components {
   .mobile-app {
     @apply w-dvw h-dvh overflow-hidden bg-cover bg-center bg-no-repeat;
-    background-image: url("/images/wallpaper.png");
+    background-image: url("/images/mobile-wallpaper.png");
   }
 
   .mobile-screen {

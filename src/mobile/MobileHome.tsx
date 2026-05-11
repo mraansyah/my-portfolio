@@ -8,7 +8,7 @@ const allApps = [
   { id: "terminal", name: "Skills", icon: "/images/terminal.png", screen: "terminal" as MobileScreen },
   { id: "github", name: "Github", icon: "/images/github.png", link: "https://github.com/mraansyah" },
   { id: "linkedin", name: "Linkedin", icon: "/images/linkedin.png", link: "https://www.linkedin.com/in/muhammadrafiansyah/" },
-  { id: "whatsapp", name: "Whatsapp", icon: "/images/whatsapp.png", link: "https://wa.me/6285777649520" },
+  { id: "whatsapp", name: "WhatsApp", icon: "/images/whatsapp.png", link: "https://wa.me/6285777649520" },
   { id: "instagram", name: "Instagram", icon: "/images/instagram.png", link: "https://www.instagram.com/rafiansyahm/" },
 ];
 
