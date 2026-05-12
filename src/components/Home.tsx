@@ -4,6 +4,7 @@ import { Draggable } from "gsap/Draggable";
 import clsx from "clsx"
 import useWindowStore from "#store/window";
 import useLocationStore from "#store/location";
+import { type LocationData } from "#store/location";
 
 const projects = locations.work?.children ?? [];
 
@@ -11,7 +12,7 @@ const Home = () => {
   const { setActiveLocation } = useLocationStore();
   const { openWindow } = useWindowStore();
 
-  const handleOpenProjectFinder = (project) => {
+  const handleOpenProjectFinder = (project: LocationData) => {
     setActiveLocation(project)
     openWindow("finder");
   }

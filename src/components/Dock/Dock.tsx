@@ -1,6 +1,7 @@
 import { dockApps } from "#constants";
 import { Tooltip } from "react-tooltip";
 import { useDock } from "./useDock";
+import { type WindowKey } from "#store/window";
 
 const Dock = () => {
   const { dockRef, toggleApp } = useDock();
@@ -17,7 +18,7 @@ const Dock = () => {
               data-tooltip-id="dock-tooltip"
               data-tooltip-content={name}
               disabled={!canOpen}
-              onClick={() => toggleApp({ id, canOpen })}
+              onClick={() => toggleApp({ id: id as WindowKey, canOpen })}
             >
               <img
                 src={`/images/${icon}`}

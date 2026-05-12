@@ -1,14 +1,14 @@
-import { useLayoutEffect, useRef } from "react";
-import useWindowStore from "#store/window";
+import { useLayoutEffect, useRef, type ComponentType } from "react";
+import useWindowStore, { type WindowKey } from "#store/window";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Draggable } from "gsap/Draggable";
 
-const WindowWrapper = (Component, windowKey) => {
-  const Wrapped = (props) => {
+const WindowWrapper = <P extends object>(Component: ComponentType<P>, windowKey: WindowKey) => {
+  const Wrapped = (props: P) => {
     const { focusWindow, windows } = useWindowStore();
     const { isOpen, zIndex } = windows[windowKey];
-    const ref = useRef(null);
+    const ref = useRef<HTMLElement>(null);
 
     useGSAP(() => {
       const el = ref.current;

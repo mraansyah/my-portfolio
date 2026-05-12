@@ -31,7 +31,7 @@ export const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "",
+      image: "/images/contact/aboutme.jpg",
       description: [
         "Hey! I'm Rafi, a software engineer who enjoys building powerful, efficient applications that actually solve real-world problems.",
         "I specialize in React, Next.js, and Node.js are my bread and butter, I love making things feel fast, scalable, and just a little bit smarter.",

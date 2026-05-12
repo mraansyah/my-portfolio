@@ -19,13 +19,9 @@ const Text = () => {
       </div>
 
       <div className="p-5 space-y-6 bg-white">
-        <div className="flex justify-start">
-          <img src="/images/contact/aboutme.jpg" className="w-24 h-24 rounded-full object-cover" />
-        </div>
-
         {image ? (
           <div className="w-full">
-            <img src={image} alt={name} className="w-full h-auto rounded" />
+            <img src={image} alt={name} className="w-24 h-24 rounded-full object-cover" />
           </div>
         ) : null}
 

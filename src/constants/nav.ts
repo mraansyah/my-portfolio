@@ -72,4 +72,4 @@ export const dockApps = [
     icon: "trash.png",
     canOpen: false,
   },
-];
+] as const;

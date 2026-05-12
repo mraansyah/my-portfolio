@@ -14,16 +14,9 @@ const MobileText = () => {
     <div className="mobile-screen">
       <MobileHeader title={name} onBack={() => closeWindow("txtfile")} />
       <div className="flex-1 overflow-y-auto p-5 space-y-6 bg-white">
-        <div className="flex justify-center">
-          <img
-            src="/images/contact/aboutme.jpg"
-            className="w-24 h-24 rounded-full object-cover border-2 border-gray-100 shadow-sm"
-          />
-        </div>
-
         {image ? (
-          <div className="w-full">
-            <img src={image} alt={name} className="w-full h-auto rounded" />
+          <div className="w-full flex justify-center">
+            <img src={image} alt={name} className="w-24 h-24 rounded-full object-cover" />
           </div>
         ) : null}
 

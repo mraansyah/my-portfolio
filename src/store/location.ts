@@ -30,7 +30,7 @@ const DEFAULT_LOCATION = locations.work as LocationData;
 const useLocationStore = create<LocationState>()(immer((set) => ({
   activeLocation: DEFAULT_LOCATION,
 
-  setActiveLocation: (location: null) => set((state) => {
+  setActiveLocation: (location: LocationData) => set((state) => {
     state.activeLocation = location;
   }),
 

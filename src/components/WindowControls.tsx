@@ -1,6 +1,6 @@
-import useWindowStore from "#store/window"
+import useWindowStore, { type WindowKey } from "#store/window"
 
-const WindowControls = ({ target }) => {
+const WindowControls = ({ target }: { target: WindowKey }) => {
   const { closeWindow } = useWindowStore();
   return (
     <div id="window-controls">

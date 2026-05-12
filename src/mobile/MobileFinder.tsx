@@ -17,7 +17,7 @@ const MobileFinder = () => {
       setActiveLocation(item);
       return;
     }
-    if (["fig", "url"].includes(item.fileType) && item.href)
+    if (item.fileType && ["fig", "url"].includes(item.fileType) && item.href)
       return window.open(item.href, "_blank");
 
     if (item.fileType === "txt") {
