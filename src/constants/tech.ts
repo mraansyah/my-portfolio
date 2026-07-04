@@ -5,7 +5,7 @@ export const techStack = [
   },
   {
     category: "Mobile",
-    items: ["React Native", "Expo"],
+    items: ["React Native", "Flutter", "Kotlin", "Expo"],
   },
   {
     category: "Styling",
@@ -21,6 +21,6 @@ export const techStack = [
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub", "Docker", "Redis", "MinIO"],
   },
 ];
